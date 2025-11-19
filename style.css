@@ -267,3 +267,76 @@ footer {
         font-size: 18px;
     }
 }
+/* Move LinkedIn and GitHub slightly lower */
+.social-links {
+    margin-top: 30px;      /* increased spacing */
+    margin-bottom: 10px;
+}
+
+/* Icon design */
+.icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.15);
+}
+/* CONTACT ICONS */
+.contact-icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.15);
+}
+/* --- Fix alignment for title and description in HERO --- */
+
+.hero-right {
+    text-align: left;        /* Makes both lines align on the left */
+}
+
+.role {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 550px;        /* Ensures same alignment width */
+    color: #ffffff;;
+}
+/* About section: JS-triggered animation (robust) */
+.animate-about {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+
+/* When JS adds .visible, it will animate into place */
+.animate-about.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
