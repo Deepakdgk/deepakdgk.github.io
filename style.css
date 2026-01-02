@@ -539,3 +539,18 @@ footer {
   border-radius: 6px;
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .buttons .btn {
+    margin-right: 0;
+    width: 80%;
+    text-align: center;
+  }
+}
+
