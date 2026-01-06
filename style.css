@@ -630,4 +630,122 @@ button:hover {
 .direct-contact a:hover {
   text-decoration: underline;
 }
+.floating-social {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 1000;
+}
 
+.floating-social a {
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    color: #222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.floating-social a:hover {
+    transform: scale(1.15);
+    color: #fff;
+}
+
+/* Brand hover colors */
+.floating-social .email:hover {
+    background: #ea4335;
+}
+
+.floating-social .linkedin:hover {
+    background: #0077b5;
+}
+
+.floating-social .github:hover {
+    background: #000;
+}
+
+.floating-social .instagram:hover {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+.floating-social .whatsapp:hover {
+    background: #25D366;
+}
+.contact {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.contact-card i {
+    font-size: 25px;
+}
+
+.contact-card span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    color: #fff;
+}
+
+/* Brand Colors */
+.contact-card.email:hover {
+    background: #ea4335;
+}
+
+.contact-card.linkedin:hover {
+    background: #0077b5;
+}
+
+.contact-card.github:hover {
+    background: #000;
+}
+
+.contact-card.instagram:hover {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+.contact-card.whatsapp:hover {
+    background: #25d366;
+}
