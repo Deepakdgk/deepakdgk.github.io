@@ -632,7 +632,7 @@ button:hover {
 }
 .floating-social {
     position: fixed;
-    top: 50%;
+    top: 65%;
     right: 20px;
     transform: translateY(-50%);
     display: flex;
@@ -749,3 +749,4 @@ button:hover {
 .contact-card.whatsapp:hover {
     background: #25d366;
 }
+
